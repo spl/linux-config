@@ -24,9 +24,6 @@ function git_install() {
   sh "$TARGET_DIR"/install.sh
 }
 
-# Local bashrc
-$LN "$DIR/.bashrc.local" "$HOME/"
-
 # Alphabetical order by directory name
 git_install 'https://github.com/spl/bash-config.git'               "$DIR/bash-config"
 git_install 'https://github.com/spl/editline-config.git'           "$DIR/editline-config"
